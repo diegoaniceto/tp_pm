@@ -10,15 +10,26 @@ package tp1.pm.model;
  * @author dhca
  */
 public class Pesquisador {
-
+    //Acho que é assim que se usa enum
+    public enum Titulacao {
+        G, D, M
+    }
     private int idPesquisador;
-    private String tag_titulacao;
+    private Titulacao tag_titulacao;
+
+    
+    //private String tag_titulacao;
     private int horas_ic;
     private int horas_estagio_docencia;
     private int num_grad_orient;
     private int num_M_orient;
     private int num_D_orient;
 
+    /*********************
+     * Metodos de Acesso
+     * 
+     *********************/
+    
     public int getIdPesquisador() {
         return idPesquisador;
     }
@@ -27,11 +38,11 @@ public class Pesquisador {
         this.idPesquisador = idPesquisador;
     }
 
-    public String getTag_titulacao() {
+    public Titulacao getTag_titulacao() {
         return tag_titulacao;
     }
 
-    public void setTag_titulacao(String tag_titulacao) {
+    public void setTag_titulacao(Titulacao tag_titulacao) {
         this.tag_titulacao = tag_titulacao;
     }
 
